@@ -1,0 +1,1519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monisha M | Data Analyst | Data Scientist | Data Engineer | Fresher 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0B1F3A;
+    --navy-mid: #122944;
+    --blue: #1A5FA8;
+    --blue-light: #2E7DD1;
+    --accent: #00C2A8;
+    --accent2: #F5A623;
+    --white: #F8F9FC;
+    --grey: #8A96A8;
+    --card: rgba(255,255,255,0.04);
+    --border: rgba(255,255,255,0.08);
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+  body {
+    background: var(--navy);
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+  }
+
+  /* ── NOISE TEXTURE ── */
+  body::before {
+    content:'';
+    position:fixed;
+    inset:0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events:none;
+    z-index:0;
+    opacity:0.4;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position:fixed; top:0; left:0; right:0;
+    z-index:100;
+    display:flex; align-items:center; justify-content:space-between;
+    padding: 20px 60px;
+    background: rgba(11,31,58,0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-logo {
+    font-family:'DM Serif Display', serif;
+    font-size:1.4rem;
+    color:var(--accent);
+    letter-spacing:-0.5px;
+  }
+  .nav-links { display:flex; gap:36px; }
+  .nav-links a {
+    font-size:0.82rem;
+    font-weight:500;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--grey);
+    text-decoration:none;
+    transition:color 0.2s;
+  }
+  .nav-links a:hover { color:var(--white); }
+
+  /* ── HERO ── */
+  .hero {
+    min-height:100vh;
+    display:flex; align-items:center;
+    padding: 120px 60px 80px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero-bg {
+    position:absolute; inset:0;
+    background:
+      radial-gradient(ellipse 70% 60% at 80% 50%, rgba(26,95,168,0.18) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 40% at 20% 80%, rgba(0,194,168,0.10) 0%, transparent 60%);
+  }
+  .hero-grid {
+    position:absolute; inset:0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse 80% 80% at center, black 30%, transparent 100%);
+  }
+  .hero-content { position:relative; z-index:2; max-width:780px; }
+  .hero-tag {
+    display:inline-flex; align-items:center; gap:8px;
+    background:rgba(0,194,168,0.12);
+    border:1px solid rgba(0,194,168,0.3);
+    border-radius:100px;
+    padding:6px 16px;
+    font-size:0.75rem;
+    font-weight:500;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin-bottom:28px;
+    animation: fadeUp 0.6s ease both;
+  }
+  .hero-tag::before {
+    content:'';
+    width:6px; height:6px;
+    border-radius:50%;
+    background:var(--accent);
+    animation:pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%,100%{ opacity:1; transform:scale(1); }
+    50%{ opacity:0.4; transform:scale(1.4); }
+  }
+  h1 {
+    font-family:'DM Serif Display', serif;
+    font-size:clamp(3rem,7vw,5.5rem);
+    line-height:1.05;
+    letter-spacing:-2px;
+    margin-bottom:24px;
+    animation: fadeUp 0.7s 0.1s ease both;
+  }
+  h1 em {
+    font-style:italic;
+    color:var(--accent);
+  }
+  .hero-sub {
+    font-size:1.05rem;
+    line-height:1.7;
+    color:var(--grey);
+    max-width:560px;
+    margin-bottom:40px;
+    animation: fadeUp 0.7s 0.2s ease both;
+  }
+  .hero-sub strong { color:var(--white); font-weight:500; }
+  .hero-ctas {
+    display:flex; gap:16px; flex-wrap:wrap;
+    animation: fadeUp 0.7s 0.3s ease both;
+  }
+  .btn-primary {
+    background:var(--accent);
+    color:var(--navy);
+    padding:13px 28px;
+    border-radius:8px;
+    font-weight:600;
+    font-size:0.88rem;
+    letter-spacing:0.05em;
+    text-decoration:none;
+    transition:all 0.2s;
+    display:inline-flex; align-items:center; gap:8px;
+  }
+  .btn-primary:hover { background:#00d9bb; transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,194,168,0.3); }
+  .btn-secondary {
+    border:1px solid var(--border);
+    color:var(--white);
+    padding:13px 28px;
+    border-radius:8px;
+    font-weight:500;
+    font-size:0.88rem;
+    text-decoration:none;
+    transition:all 0.2s;
+    display:inline-flex; align-items:center; gap:8px;
+  }
+  .btn-secondary:hover { border-color:var(--accent); color:var(--accent); transform:translateY(-2px); }
+
+  .hero-stats {
+    position:absolute; right:60px; top:50%;
+    transform:translateY(-50%);
+    display:flex; flex-direction:column; gap:20px;
+    animation: fadeLeft 0.8s 0.4s ease both;
+  }
+  .stat-card {
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:18px 24px;
+    min-width:150px;
+    backdrop-filter:blur(10px);
+  }
+  .stat-num {
+    font-family:'DM Serif Display', serif;
+    font-size:2rem;
+    color:var(--accent);
+    line-height:1;
+    margin-bottom:4px;
+  }
+  .stat-label {
+    font-size:0.72rem;
+    color:var(--grey);
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+  }
+
+  @keyframes fadeUp {
+    from{ opacity:0; transform:translateY(24px); }
+    to{ opacity:1; transform:translateY(0); }
+  }
+  @keyframes fadeLeft {
+    from{ opacity:0; transform:translate(24px,-50%); }
+    to{ opacity:1; transform:translate(0,-50%); }
+  }
+
+  /* ── SECTION BASE ── */
+  section { padding:100px 60px; position:relative; z-index:1; }
+  .section-label {
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.72rem;
+    color:var(--accent);
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    margin-bottom:12px;
+    display:flex; align-items:center; gap:10px;
+  }
+  .section-label::after {
+    content:'';
+    height:1px;
+    width:40px;
+    background:var(--accent);
+    opacity:0.5;
+  }
+  .section-title {
+    font-family:'DM Serif Display', serif;
+    font-size:clamp(2rem,4vw,3rem);
+    letter-spacing:-1px;
+    margin-bottom:60px;
+    line-height:1.1;
+  }
+
+  /* ── ABOUT ── */
+  .about-grid {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:start;
+  }
+  .about-text p {
+    font-size:1rem;
+    line-height:1.8;
+    color:rgba(248,249,252,0.75);
+    margin-bottom:20px;
+  }
+  .about-text p strong { color:var(--white); font-weight:500; }
+  .about-info {
+    display:flex; flex-direction:column; gap:12px;
+    margin-top:32px;
+  }
+  .info-row {
+    display:flex; gap:16px; align-items:flex-start;
+    font-size:0.88rem;
+  }
+  .info-label {
+    color:var(--grey);
+    min-width:100px;
+    font-weight:500;
+    font-size:0.78rem;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    padding-top:2px;
+  }
+  .info-val { color:var(--white); }
+  .skills-grid {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+  }
+  .skill-chip {
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:10px 14px;
+    font-size:0.8rem;
+    display:flex; align-items:center; gap:8px;
+    transition:all 0.2s;
+  }
+  .skill-chip:hover { border-color:var(--accent); background:rgba(0,194,168,0.08); }
+  .skill-chip .dot {
+    width:6px; height:6px; border-radius:50%;
+    background:var(--accent); flex-shrink:0;
+  }
+
+  /* ── EXPERIENCE ── */
+  .exp-bg {
+    background:rgba(255,255,255,0.02);
+    margin:0 -60px;
+    padding:100px 60px;
+    border-top:1px solid var(--border);
+    border-bottom:1px solid var(--border);
+  }
+  .timeline { display:flex; flex-direction:column; gap:0; }
+  .timeline-item {
+    display:grid;
+    grid-template-columns:180px 1px 1fr;
+    gap:0 32px;
+    padding-bottom:40px;
+  }
+  .timeline-item:last-child { padding-bottom:0; }
+  .t-date {
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.75rem;
+    color:var(--grey);
+    padding-top:4px;
+    text-align:right;
+  }
+  .t-line {
+    position:relative;
+    background:var(--border);
+  }
+  .t-line::before {
+    content:'';
+    position:absolute;
+    top:6px; left:50%;
+    transform:translateX(-50%);
+    width:10px; height:10px;
+    border-radius:50%;
+    background:var(--accent);
+    border:2px solid var(--navy);
+    box-shadow:0 0 0 3px rgba(0,194,168,0.2);
+  }
+  .t-content { padding-bottom:4px; }
+  .t-role {
+    font-weight:600;
+    font-size:0.95rem;
+    margin-bottom:2px;
+  }
+  .t-company {
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.75rem;
+    color:var(--accent);
+    margin-bottom:10px;
+  }
+  .t-desc {
+    font-size:0.85rem;
+    line-height:1.65;
+    color:rgba(248,249,252,0.65);
+  }
+
+  /* ── PROJECTS ── */
+  .projects-grid {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+  }
+  .project-card {
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:32px;
+    transition:all 0.3s;
+    position:relative;
+    overflow:hidden;
+  }
+  .project-card::before {
+    content:'';
+    position:absolute;
+    top:0; left:0; right:0;
+    height:2px;
+    background:linear-gradient(90deg, var(--accent), var(--blue-light));
+    opacity:0;
+    transition:opacity 0.3s;
+  }
+  .project-card:hover {
+    border-color:rgba(0,194,168,0.3);
+    transform:translateY(-4px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.3);
+  }
+  .project-card:hover::before { opacity:1; }
+  .project-tag {
+    display:inline-block;
+    background:rgba(0,194,168,0.1);
+    border:1px solid rgba(0,194,168,0.25);
+    color:var(--accent);
+    font-size:0.68rem;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    padding:3px 10px;
+    border-radius:100px;
+    margin-bottom:16px;
+  }
+  .project-title {
+    font-family:'DM Serif Display', serif;
+    font-size:1.3rem;
+    margin-bottom:10px;
+    letter-spacing:-0.5px;
+  }
+  .project-desc {
+    font-size:0.84rem;
+    line-height:1.7;
+    color:rgba(248,249,252,0.6);
+    margin-bottom:20px;
+  }
+  .project-bullets {
+    display:flex; flex-direction:column; gap:8px;
+    margin-bottom:20px;
+  }
+  .project-bullet {
+    font-size:0.8rem;
+    color:rgba(248,249,252,0.65);
+    padding-left:14px;
+    position:relative;
+    line-height:1.5;
+  }
+  .project-bullet::before {
+    content:'→';
+    position:absolute; left:0;
+    color:var(--accent);
+    font-size:0.7rem;
+  }
+  .project-techs {
+    display:flex; flex-wrap:wrap; gap:6px;
+  }
+  .tech-tag {
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.1);
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.68rem;
+    padding:3px 9px;
+    border-radius:4px;
+    color:var(--grey);
+  }
+
+  /* ── SKILLS SECTION ── */
+  .skills-section-bg {
+    background:rgba(255,255,255,0.02);
+    margin:0 -60px;
+    padding:100px 60px;
+    border-top:1px solid var(--border);
+    border-bottom:1px solid var(--border);
+  }
+  .skills-cats {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:24px;
+  }
+  .skill-cat {
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:28px 24px;
+    transition:all 0.2s;
+  }
+  .skill-cat:hover {
+    border-color:rgba(0,194,168,0.3);
+    background:rgba(0,194,168,0.04);
+  }
+  .skill-cat-icon {
+    font-size:1.6rem;
+    margin-bottom:12px;
+  }
+  .skill-cat-name {
+    font-weight:600;
+    font-size:0.88rem;
+    margin-bottom:16px;
+    color:var(--white);
+  }
+  .skill-list {
+    display:flex; flex-direction:column; gap:8px;
+  }
+  .skill-item {
+    font-size:0.8rem;
+    color:var(--grey);
+    display:flex; align-items:center; gap:8px;
+  }
+  .skill-item::before {
+    content:'';
+    width:4px; height:4px;
+    border-radius:50%;
+    background:var(--accent);
+    flex-shrink:0;
+  }
+
+  /* ── CERTIFICATIONS ── */
+  .certs-grid {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+  }
+  .cert-card {
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:24px;
+    display:flex; align-items:flex-start; gap:16px;
+    transition:all 0.2s;
+  }
+  .cert-card:hover {
+    border-color:rgba(245,166,35,0.4);
+    background:rgba(245,166,35,0.05);
+    transform:translateY(-2px);
+  }
+  .cert-icon {
+    width:42px; height:42px;
+    border-radius:10px;
+    background:rgba(245,166,35,0.15);
+    border:1px solid rgba(245,166,35,0.3);
+    display:flex; align-items:center; justify-content:center;
+    font-size:1.2rem;
+    flex-shrink:0;
+  }
+  .cert-name {
+    font-weight:600;
+    font-size:0.85rem;
+    margin-bottom:4px;
+    line-height:1.3;
+  }
+  .cert-org {
+    font-size:0.75rem;
+    color:var(--accent2);
+    font-family:'JetBrains Mono', monospace;
+  }
+
+  /* ── EDUCATION ── */
+  .edu-grid {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+  }
+  .edu-card {
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:28px 32px;
+    position:relative;
+    overflow:hidden;
+    transition:all 0.2s;
+  }
+  .edu-card:hover { border-color:rgba(26,95,168,0.5); transform:translateY(-2px); }
+  .edu-card::after {
+    content:'';
+    position:absolute;
+    bottom:0; right:0;
+    width:80px; height:80px;
+    background:radial-gradient(circle, rgba(0,194,168,0.08), transparent 70%);
+    border-radius:50%;
+  }
+  .edu-degree {
+    font-family:'DM Serif Display', serif;
+    font-size:1.15rem;
+    margin-bottom:6px;
+    letter-spacing:-0.3px;
+  }
+  .edu-school {
+    font-size:0.82rem;
+    color:var(--accent);
+    font-family:'JetBrains Mono', monospace;
+    margin-bottom:12px;
+  }
+  .edu-meta {
+    display:flex; gap:16px; flex-wrap:wrap;
+  }
+  .edu-badge {
+    background:rgba(255,255,255,0.06);
+    border:1px solid var(--border);
+    padding:4px 12px;
+    border-radius:100px;
+    font-size:0.75rem;
+    color:var(--grey);
+  }
+  .edu-badge.highlight {
+    background:rgba(0,194,168,0.1);
+    border-color:rgba(0,194,168,0.3);
+    color:var(--accent);
+    font-weight:600;
+  }
+
+  /* ── CONTACT ── */
+  .contact-inner {
+    max-width:640px;
+    margin:0 auto;
+    text-align:center;
+  }
+  .contact-inner .section-label { justify-content:center; }
+  .contact-inner .section-label::after { display:none; }
+  .contact-inner .section-title { margin-bottom:16px; }
+  .contact-sub {
+    font-size:1rem;
+    color:var(--grey);
+    line-height:1.7;
+    margin-bottom:48px;
+  }
+  .contact-links {
+    display:flex; justify-content:center; gap:16px; flex-wrap:wrap;
+  }
+  .contact-link {
+    display:flex; align-items:center; gap:10px;
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:12px 22px;
+    text-decoration:none;
+    color:var(--white);
+    font-size:0.85rem;
+    font-weight:500;
+    transition:all 0.2s;
+  }
+  .contact-link:hover {
+    border-color:var(--accent);
+    color:var(--accent);
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+  }
+  .contact-link svg { width:16px; height:16px; }
+
+  /* ── FOOTER ── */
+  footer {
+    border-top:1px solid var(--border);
+    padding:28px 60px;
+    display:flex; justify-content:space-between; align-items:center;
+    font-size:0.78rem;
+    color:var(--grey);
+  }
+  .footer-brand { font-family:'DM Serif Display',serif; color:var(--accent); }
+
+  /* ── SCROLL ANIMATIONS ── */
+  .reveal {
+    opacity:0;
+    transform:translateY(30px);
+    transition:opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible {
+    opacity:1;
+    transform:translateY(0);
+  }
+
+  @media(max-width:900px){
+    nav { padding:16px 24px; }
+    section { padding:70px 24px; }
+    .hero { padding:110px 24px 60px; }
+    .hero-stats { display:none; }
+    .about-grid, .projects-grid, .edu-grid,
+    .skills-cats, .certs-grid { grid-template-columns:1fr; }
+    .exp-bg, .skills-section-bg { margin:0 -24px; padding:70px 24px; }
+    footer { padding:20px 24px; flex-direction:column; gap:8px; text-align:center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Monisha M.</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Available for immediate joining</div>
+    <h1>Data Analyst · Scientist<br><em>&amp; Data</em><br>Engineer</h1>
+    <p class="hero-sub">
+      Hi, I'm <strong>Monisha M</strong> — a fresher <strong>Data Analyst &amp; Data Scientist</strong> with M.Sc. Applied Data Science (CGPA <strong>9.78</strong>, SRM University). Completed <strong>7 internships</strong> building ML models, Power BI dashboards, SQL pipelines, AWS ETL pipelines and cloud solutions. I turn raw data into decisions that matter.
+    </p>
+    <div class="hero-ctas">
+      <a href="mailto:monishamani2908@gmail.com" class="btn-primary">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+        Hire Me
+      </a>
+      <button onclick="openProjectModal()" class="btn-secondary" style="cursor:pointer;border:none;">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        View Projects
+      </button>
+      <a href="https://linkedin.com/in/monisha-m-ba8781304" target="_blank" class="btn-secondary">LinkedIn ↗</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-card" style="text-align:center;padding:20px;">
+      <!-- PROFILE IMAGE: Replace src with your photo URL or base64 -->
+      <div id="profile-img-wrap" style="width:120px;height:120px;border-radius:50%;margin:0 auto 12px;border:3px solid rgba(0,194,168,0.5);overflow:hidden;box-shadow:0 0 0 6px rgba(0,194,168,0.1);flex-shrink:0;">
+        <img src="data:image/jpeg;base64,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" alt="Monisha M" style="width:100%;height:100%;object-fit:cover;object-position:center top;">
+      </div>
+      <div style="font-family:'DM Serif Display',serif;font-size:1rem;color:#fff;">Monisha M</div>
+      <div style="font-size:0.7rem;color:var(--accent);font-family:'JetBrains Mono',monospace;margin-top:2px;">DA · DS · DE</div>
+      <div style="margin-top:8px;display:inline-flex;align-items:center;gap:5px;background:rgba(0,194,168,0.12);border:1px solid rgba(0,194,168,0.3);border-radius:100px;padding:3px 10px;font-size:0.65rem;color:var(--accent);">
+        <span style="width:5px;height:5px;border-radius:50%;background:var(--accent);animation:pulse 2s infinite;display:inline-block;"></span>
+        Open to Work
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">9.78</div>
+      <div class="stat-label">CGPA</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">7</div>
+      <div class="stat-label">Internships</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">2+</div>
+      <div class="stat-label">Live Projects</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">AWS</div>
+      <div class="stat-label">Certified</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" style="scroll-margin-top:80px">
+  <div class="section-label">01 — About</div>
+  <div class="section-title">Who I Am</div>
+  <div class="about-grid reveal">
+    <div class="about-text">
+      <p>I'm a fresher <strong>Data Analyst &amp; Data Scientist</strong> with an M.Sc. in Applied Data Science from SRM University (CGPA 9.78). My background in physics sharpened my analytical thinking, and 7 real-world internships gave me the technical skills to work with data end-to-end — from raw datasets to business dashboards and ML predictions.</p>
+      <p>Across <strong>7 internships</strong>, I've built ML pipelines, deployed models on AWS, automated data workflows, created Power BI dashboards and developed REST APIs — all of which have delivered measurable business outcomes for real clients.</p>
+      <p>Open to <strong>Data Analyst</strong>, <strong>Data Scientist</strong>, <strong>Data Engineer</strong> and <strong>BI Analyst</strong> roles — full-time or part-time, remote or hybrid. <strong>Available for immediate joining.</strong></p>
+      <div class="about-info">
+        <div class="info-row">
+          <span class="info-label">Location</span>
+          <span class="info-val">Tamil Nadu, India</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Email</span>
+          <span class="info-val">monishamani2908@gmail.com</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Phone</span>
+          <span class="info-val">9361117038</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Availability</span>
+          <span class="info-val" style="color:var(--accent);font-weight:600;">✅ Immediate Joiner — Available Now</span>
+        </div>
+
+        <div class="info-row">
+          <span class="info-label">Languages</span>
+          <span class="info-val">Tamil (Native), English (Fluent), Hindi (R&W)</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div style="margin-bottom:12px;font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--grey);font-weight:500;">Core Skills</div>
+      <div class="skills-grid">
+        <div class="skill-chip"><span class="dot"></span>Python</div>
+        <div class="skill-chip"><span class="dot"></span>SQL</div>
+        <div class="skill-chip"><span class="dot"></span>Power BI</div>
+        <div class="skill-chip"><span class="dot"></span>Tableau</div>
+        <div class="skill-chip"><span class="dot"></span>Machine Learning</div>
+        <div class="skill-chip"><span class="dot"></span>AWS Cloud</div>
+        <div class="skill-chip"><span class="dot"></span>Excel / DAX</div>
+        <div class="skill-chip"><span class="dot"></span>C++</div>
+        <div class="skill-chip"><span class="dot"></span>Django REST</div>
+        <div class="skill-chip"><span class="dot"></span>Pandas / NumPy</div>
+        <div class="skill-chip"><span class="dot"></span>Scikit-learn</div>
+        <div class="skill-chip"><span class="dot"></span>Git</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<div class="exp-bg" id="experience" style="scroll-margin-top:80px">
+  <section style="padding:0;scroll-margin-top:80px">
+    <div class="section-label">02 — Experience</div>
+    <div class="section-title">7 Internships &<br>Real Projects</div>
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="t-date">May – Jun 2025</div>
+        <div class="t-line"></div>
+        <div class="t-content">
+          <div class="t-role">Data Science Intern</div>
+          <div class="t-company">Cognifyz Technology</div>
+          <div class="t-desc">Analysed restaurant datasets using Python (Pandas, Seaborn) to uncover pricing trends and customer preference patterns. Produced a structured insights report adopted directly for the client's marketing strategy.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="t-date">May – Jun 2025</div>
+        <div class="t-line"></div>
+        <div class="t-content">
+          <div class="t-role">Data Analytics Intern</div>
+          <div class="t-company">NullEd Tech</div>
+          <div class="t-desc">Built automated data-cleaning scripts in Python that cut preprocessing time by 40%. Created Tableau sales-funnel dashboards adopted by the client growth team for weekly performance reviews.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="t-date">Apr – Jun 2025</div>
+        <div class="t-line"></div>
+        <div class="t-content">
+          <div class="t-role">AI-ML Intern</div>
+          <div class="t-company">Amazon Web Services</div>
+          <div class="t-desc">Deployed a binary customer churn classifier on AWS SageMaker AutoPilot, achieving 85% accuracy on the held-out test set. Documented model evaluation results and pipeline architecture.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="t-date">Jan – Mar 2025</div>
+        <div class="t-line"></div>
+        <div class="t-content">
+          <div class="t-role">Cloud Intern</div>
+          <div class="t-company">Amazon Web Services</div>
+          <div class="t-desc">Completed 20+ AWS labs covering S3, EC2, RDS, Lambda and IAM. Designed and deployed a serverless ETL pipeline using Lambda + S3 + Glue for automated structured dataset processing.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="t-date">Jun – Jul 2024</div>
+        <div class="t-line"></div>
+        <div class="t-content">
+          <div class="t-role">Web App Development Intern</div>
+          <div class="t-company">Bleswa Solutions</div>
+          <div class="t-desc">Developed RESTful APIs and admin modules in Django for an internal CRM with MySQL backend. Reduced manual data-entry workflows by ~25% through API automation.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="t-date">Jun 2023</div>
+        <div class="t-line"></div>
+        <div class="t-content">
+          <div class="t-role">ML & Data Science Intern</div>
+          <div class="t-company">NIELIT</div>
+          <div class="t-desc">Implemented and benchmarked supervised ML classifiers — SVM, Decision Tree, and KNN — on standard datasets. Documented comparative results for use in official institute training material.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<!-- PROJECTS -->
+<section id="projects" style="scroll-margin-top:80px">
+  <div class="section-label">03 — Projects</div>
+  <div class="section-title">Built. Measured.<br>Delivered.</div>
+  <div class="projects-grid">
+
+    <div class="project-card reveal">
+      <div class="project-tag">ML · Data Pipeline · BI</div>
+      <div class="project-title">Air Quality Forecasting Tool</div>
+      <div class="project-desc">End-to-end time-series forecasting system predicting AQI 48 hours in advance across Tamil Nadu — built at SRM University.</div>
+      <div class="project-bullets">
+        <div class="project-bullet">Built ARIMA + Random Forest pipeline on 3 years of AQI data from 10+ monitoring stations</div>
+        <div class="project-bullet">Achieved ~18% RMSE reduction over baseline via cross-validation hyperparameter tuning</div>
+        <div class="project-bullet">Delivered Power BI dashboard with real-time alerts — reduced manual reporting effort by ~30%</div>
+      </div>
+      <div class="project-techs">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">ARIMA</span>
+        <span class="tech-tag">Random Forest</span>
+        <span class="tech-tag">Scikit-learn</span>
+        <span class="tech-tag">Power BI</span>
+        <span class="tech-tag">Pandas</span>
+      </div>
+      <div style="margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:0.72rem;color:var(--accent);">Oct 2025 · SRM University</div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-tag">Dashboard · ETL · Analytics</div>
+      <div class="project-title">Enterprise Data Analytics Dashboard</div>
+      <div class="project-desc">Analytics solution consolidating multi-source business data into a single live Power BI dashboard for trend-based decision making — deployed at Bleswa Solutions.</div>
+      <div class="project-bullets">
+        <div class="project-bullet">Consolidated 5 disparate data sources into a unified Power BI platform</div>
+        <div class="project-bullet">Wrote optimised SQL & DAX for KPIs: MoM revenue growth, churn rate, top-10 SKUs</div>
+        <div class="project-bullet">Automated weekly ETL refresh via Python — cut report turnaround from 3 days to 2 hours</div>
+      </div>
+      <div class="project-techs">
+        <span class="tech-tag">Power BI</span>
+        <span class="tech-tag">SQL</span>
+        <span class="tech-tag">DAX</span>
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">MySQL</span>
+      </div>
+      <div style="margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:0.72rem;color:var(--accent);">Apr 2026 · Bleswa Solutions</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<div class="skills-section-bg" id="skills" style="scroll-margin-top:80px">
+  <section style="padding:0">
+    <div class="section-label">04 — Skills</div>
+    <div class="section-title">Technical Stack</div>
+    <div class="skills-cats">
+
+      <div class="skill-cat reveal">
+        <div class="skill-cat-icon">🐍</div>
+        <div class="skill-cat-name">Programming</div>
+        <div class="skill-list">
+          <div class="skill-item">Python</div>
+          <div class="skill-item">SQL</div>
+          <div class="skill-item">C++</div>
+          <div class="skill-item">Pandas, NumPy</div>
+          <div class="skill-item">Matplotlib, Seaborn</div>
+        </div>
+      </div>
+
+      <div class="skill-cat reveal">
+        <div class="skill-cat-icon">📊</div>
+        <div class="skill-cat-name">BI & Visualization</div>
+        <div class="skill-list">
+          <div class="skill-item">Power BI (DAX)</div>
+          <div class="skill-item">Tableau</div>
+          <div class="skill-item">Excel (Pivot, VLOOKUP)</div>
+          <div class="skill-item">Data Modelling</div>
+        </div>
+      </div>
+
+      <div class="skill-cat reveal">
+        <div class="skill-cat-icon">🤖</div>
+        <div class="skill-cat-name">ML & AI</div>
+        <div class="skill-list">
+          <div class="skill-item">Scikit-learn</div>
+          <div class="skill-item">Regression &amp; Classification</div>
+          <div class="skill-item">Clustering</div>
+          <div class="skill-item">Time-Series (ARIMA)</div>
+          <div class="skill-item">NLP basics</div>
+        </div>
+      </div>
+
+      <div class="skill-cat reveal">
+        <div class="skill-cat-icon">☁️</div>
+        <div class="skill-cat-name">Cloud &amp; Tools</div>
+        <div class="skill-list">
+          <div class="skill-item">AWS SageMaker</div>
+          <div class="skill-item">AWS Lambda, S3, EC2</div>
+          <div class="skill-item">AWS Glue — ETL Pipelines</div>
+          <div class="skill-item">Git</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<!-- EDUCATION -->
+<section id="education" style="scroll-margin-top:80px">
+  <div class="section-label">05 — Education</div>
+  <div class="section-title">Academic Background</div>
+  <div class="edu-grid reveal">
+
+    <div class="edu-card">
+      <div class="edu-degree">M.Sc. Applied Data Science</div>
+      <div class="edu-school">SRM Institute of Science &amp; Technology</div>
+      <div class="edu-meta">
+        <span class="edu-badge highlight">CGPA 9.78</span>
+        <span class="edu-badge">Jul 2024 – Apr 2026</span>
+        <span class="edu-badge">Kattankulathur, TN</span>
+      </div>
+    </div>
+
+    <div class="edu-card">
+      <div class="edu-degree">B.Sc. Physics</div>
+      <div class="edu-school">Meenakshi College for Women (Autonomous)</div>
+      <div class="edu-meta">
+        <span class="edu-badge highlight">CGPA 8.14</span>
+        <span class="edu-badge">Sep 2021 – Apr 2024</span>
+        <span class="edu-badge">Chennai, TN</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Certifications -->
+  <div style="margin-top:60px;">
+    <div style="font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--grey);font-weight:500;margin-bottom:24px;">Certifications &amp; Achievements</div>
+    <div class="certs-grid reveal">
+
+      <div class="cert-card">
+        <div class="cert-icon">☁️</div>
+        <div>
+          <div class="cert-name">AWS AI-ML & Cloud Internship Certificate</div>
+          <div class="cert-org">Amazon Web Services · 2025</div>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon">💻</div>
+        <div>
+          <div class="cert-name">Master in Software Application</div>
+          <div class="cert-org">Apollo Computer Education · 2023 · Grade A+</div>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon">🏆</div>
+        <div>
+          <div class="cert-name">1st Rank — Computer Applications Dept.</div>
+          <div class="cert-org">Certificate of Merit</div>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon">🌐</div>
+        <div>
+          <div class="cert-name">Hindi Prachar Sabha</div>
+          <div class="cert-org">9-Level Language Certification</div>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon">⌨️</div>
+        <div>
+          <div class="cert-name">Typewriting — English &amp; Tamil Senior Grade</div>
+          <div class="cert-org">Tamil Nadu Board of Technical Education</div>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon">📐</div>
+        <div>
+          <div class="cert-name">M.Sc. Data Science Graduate</div>
+          <div class="cert-org">SRM University · CGPA 9.78 · 2026</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="scroll-margin-top:80px;background:rgba(0,194,168,0.03);border-top:1px solid var(--border);" style="background:rgba(0,194,168,0.03);border-top:1px solid var(--border);">
+  <div class="contact-inner">
+    <div class="section-label" style="justify-content:center;">06 — Contact</div>
+    <div class="section-title">Let's Work Together</div>
+    <p class="contact-sub">Actively seeking <strong style="color:var(--white)">Data Analyst</strong>, <strong style="color:var(--white)">Data Scientist</strong>, <strong style="color:var(--white)">Data Engineer</strong> and <strong style="color:var(--white)">BI Analyst</strong> roles across India. Available for <strong style="color:var(--accent)">immediate joining</strong> — remote, hybrid or on-site.</p>
+    <div class="contact-links">
+      <a href="mailto:monishamani2908@gmail.com" class="contact-link">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+        monishamani2908@gmail.com
+      </a>
+      <a href="tel:9361117038" class="contact-link">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        9361117038
+      </a>
+      <a href="https://linkedin.com/in/monisha-m-ba8781304" target="_blank" class="contact-link">
+        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn Profile
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">Monisha M.</div>
+  <div>Data Analyst · Data Scientist · Data Engineer · CGPA 9.78 · Immediate Joiner</div>
+  <div>Chennai, Tamil Nadu, India</div>
+</footer>
+
+<script>
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if(e.isIntersecting){
+        setTimeout(() => e.target.classList.add('visible'), i * 80);
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(r => io.observe(r));
+</script>
+
+<!-- ══ PROJECT MODAL ══════════════════════════════════════════════════════ -->
+<style>
+.modal-overlay {
+  display:none; position:fixed; inset:0; z-index:999;
+  background:rgba(5,15,30,0.92); backdrop-filter:blur(16px);
+  align-items:center; justify-content:center;
+  padding:20px;
+}
+.modal-overlay.open { display:flex; }
+.modal-box {
+  background:#0d2137;
+  border:1px solid rgba(0,194,168,0.25);
+  border-radius:20px;
+  width:100%; max-width:860px;
+  max-height:90vh;
+  overflow-y:auto;
+  padding:40px;
+  position:relative;
+  animation:modalIn 0.3s ease;
+}
+@keyframes modalIn {
+  from{ opacity:0; transform:scale(0.95) translateY(20px); }
+  to{ opacity:1; transform:scale(1) translateY(0); }
+}
+.modal-close {
+  position:absolute; top:20px; right:20px;
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.12);
+  color:#fff; border-radius:8px;
+  width:36px; height:36px;
+  font-size:1.1rem; cursor:pointer;
+  display:flex; align-items:center; justify-content:center;
+  transition:all 0.2s;
+}
+.modal-close:hover { background:rgba(0,194,168,0.2); border-color:var(--accent); }
+.modal-tabs {
+  display:flex; gap:8px; margin-bottom:32px; flex-wrap:wrap;
+}
+.m-tab {
+  padding:8px 20px; border-radius:8px;
+  border:1px solid rgba(255,255,255,0.1);
+  background:transparent; color:rgba(248,249,252,0.5);
+  font-size:0.82rem; font-weight:500; cursor:pointer;
+  font-family:'DM Sans',sans-serif;
+  transition:all 0.2s;
+}
+.m-tab.active {
+  background:var(--accent); color:#0B1F3A;
+  border-color:var(--accent); font-weight:600;
+}
+.m-panel { display:none; }
+.m-panel.active { display:block; }
+.m-proj-title {
+  font-family:'DM Serif Display',serif;
+  font-size:1.5rem; margin-bottom:6px; letter-spacing:-0.5px;
+}
+.m-proj-sub {
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.72rem; color:var(--accent);
+  margin-bottom:20px;
+}
+.m-proj-desc {
+  font-size:0.9rem; line-height:1.75;
+  color:rgba(248,249,252,0.7);
+  margin-bottom:24px;
+}
+.m-section-label {
+  font-size:0.7rem; font-weight:600;
+  letter-spacing:0.15em; text-transform:uppercase;
+  color:rgba(248,249,252,0.35);
+  margin-bottom:10px;
+}
+.m-bullets { display:flex; flex-direction:column; gap:8px; margin-bottom:24px; }
+.m-bullet {
+  font-size:0.85rem; line-height:1.6;
+  color:rgba(248,249,252,0.7);
+  padding-left:18px; position:relative;
+}
+.m-bullet::before {
+  content:'▸'; position:absolute; left:0;
+  color:var(--accent); font-size:0.75rem; top:2px;
+}
+.m-techs { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:28px; }
+.m-tech {
+  background:rgba(0,194,168,0.08);
+  border:1px solid rgba(0,194,168,0.2);
+  color:var(--accent);
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.7rem; padding:4px 10px; border-radius:6px;
+}
+/* chart area */
+.chart-area {
+  background:rgba(0,0,0,0.25);
+  border:1px solid rgba(255,255,255,0.07);
+  border-radius:14px; padding:24px;
+  margin-bottom:16px;
+}
+.chart-title {
+  font-size:0.78rem; font-weight:600;
+  color:rgba(248,249,252,0.5);
+  letter-spacing:0.08em; text-transform:uppercase;
+  margin-bottom:16px;
+}
+/* bar chart */
+.bar-chart { display:flex; align-items:flex-end; gap:10px; height:120px; }
+.bar-wrap { display:flex; flex-direction:column; align-items:center; flex:1; height:100%; justify-content:flex-end; }
+.bar {
+  width:100%; border-radius:6px 6px 0 0;
+  position:relative; transition:all 0.8s ease;
+}
+.bar-val {
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.65rem; color:#fff; text-align:center;
+  margin-bottom:4px;
+}
+.bar-label {
+  font-size:0.62rem; color:rgba(248,249,252,0.4);
+  text-align:center; margin-top:6px;
+  max-width:60px; line-height:1.3;
+}
+/* metric cards */
+.metric-row { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-bottom:16px; }
+.metric-card {
+  background:rgba(0,194,168,0.06);
+  border:1px solid rgba(0,194,168,0.15);
+  border-radius:10px; padding:16px;
+  text-align:center;
+}
+.metric-val {
+  font-family:'DM Serif Display',serif;
+  font-size:1.6rem; color:var(--accent); line-height:1;
+  margin-bottom:4px;
+}
+.metric-label {
+  font-size:0.68rem; color:rgba(248,249,252,0.45);
+  letter-spacing:0.08em; text-transform:uppercase;
+}
+/* line chart SVG */
+.line-svg { width:100%; height:110px; }
+/* AQI station dots */
+.station-grid {
+  display:grid; grid-template-columns:repeat(5,1fr); gap:8px;
+}
+.station-dot {
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:8px; padding:8px 4px; text-align:center;
+  font-size:0.62rem; color:rgba(248,249,252,0.5);
+}
+.station-dot .dot-ind {
+  width:10px; height:10px; border-radius:50%;
+  margin:0 auto 5px;
+}
+</style>
+
+<div class="modal-overlay" id="projectModal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeProjectModal()">✕</button>
+
+    <div style="margin-bottom:6px;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:0.7rem;color:var(--accent);letter-spacing:0.15em;text-transform:uppercase;">Portfolio · Projects</span>
+    </div>
+    <h2 style="font-family:'DM Serif Display',serif;font-size:1.8rem;margin-bottom:24px;letter-spacing:-1px;">My Work</h2>
+
+    <div class="modal-tabs">
+      <button class="m-tab active" onclick="switchTab(0)">01 · Air Quality Forecasting</button>
+      <button class="m-tab" onclick="switchTab(1)">02 · Analytics Dashboard</button>
+    </div>
+
+    <!-- PROJECT 1 -->
+    <div class="m-panel active" id="tab0">
+      <div class="m-proj-title">Air Quality Forecasting Tool</div>
+      <div class="m-proj-sub">SRM University · Oct 2025</div>
+      <div class="m-proj-desc">
+        End-to-end time-series AQI prediction system for Tamil Nadu — forecasting air quality 48 hours in advance using ARIMA + Random Forest models trained on 3 years of sensor data from 10+ monitoring stations.
+      </div>
+
+      <div class="metric-row">
+        <div class="metric-card">
+          <div class="metric-val">~18%</div>
+          <div class="metric-label">RMSE Reduction</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-val">10+</div>
+          <div class="metric-label">Monitoring Stations</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-val">~30%</div>
+          <div class="metric-label">Reporting Effort Saved</div>
+        </div>
+      </div>
+
+      <!-- Model comparison bar chart -->
+      <div class="chart-area">
+        <div class="chart-title">Model RMSE Comparison (lower = better)</div>
+        <div class="bar-chart">
+          <div class="bar-wrap">
+            <div class="bar-val">42.1</div>
+            <div class="bar" style="height:85%;background:rgba(255,100,100,0.5);border:1px solid rgba(255,100,100,0.4);"></div>
+            <div class="bar-label">Baseline (Mean)</div>
+          </div>
+          <div class="bar-wrap">
+            <div class="bar-val">36.8</div>
+            <div class="bar" style="height:74%;background:rgba(245,166,35,0.5);border:1px solid rgba(245,166,35,0.4);"></div>
+            <div class="bar-label">ARIMA Only</div>
+          </div>
+          <div class="bar-wrap">
+            <div class="bar-val">34.6</div>
+            <div class="bar" style="height:69%;background:rgba(46,125,209,0.6);border:1px solid rgba(46,125,209,0.4);"></div>
+            <div class="bar-label">Random Forest</div>
+          </div>
+          <div class="bar-wrap">
+            <div class="bar-val" style="color:var(--accent);">34.3</div>
+            <div class="bar" style="height:68%;background:var(--accent);border:1px solid var(--accent);"></div>
+            <div class="bar-label" style="color:var(--accent);">ARIMA + RF ✓</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AQI Trend line SVG -->
+      <div class="chart-area">
+        <div class="chart-title">Sample AQI Trend — Actual vs Predicted (48-hr window)</div>
+        <svg class="line-svg" viewBox="0 0 700 100" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#00C2A8" stop-opacity="0.3"/>
+              <stop offset="100%" stop-color="#00C2A8" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#F5A623" stop-opacity="0.2"/>
+              <stop offset="100%" stop-color="#F5A623" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <!-- Actual line fill -->
+          <path d="M0,70 C50,65 80,50 120,45 C160,40 190,55 230,50 C270,45 300,35 350,30 C400,25 430,40 470,38 C510,36 550,45 590,42 C620,40 660,35 700,38 L700,100 L0,100 Z" fill="url(#g1)" opacity="0.5"/>
+          <!-- Actual line -->
+          <path d="M0,70 C50,65 80,50 120,45 C160,40 190,55 230,50 C270,45 300,35 350,30 C400,25 430,40 470,38 C510,36 550,45 590,42 C620,40 660,35 700,38" fill="none" stroke="#00C2A8" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- Predicted line fill -->
+          <path d="M0,72 C50,67 80,53 120,47 C160,42 190,57 230,53 C270,48 300,38 350,33 C400,28 430,43 470,40 C510,38 550,47 590,44 C620,42 660,37 700,40 L700,100 L0,100 Z" fill="url(#g2)" opacity="0.4"/>
+          <!-- Predicted line -->
+          <path d="M0,72 C50,67 80,53 120,47 C160,42 190,57 230,53 C270,48 300,38 350,33 C400,28 430,43 470,40 C510,38 550,47 590,44 C620,42 660,37 700,40" fill="none" stroke="#F5A623" stroke-width="2" stroke-dasharray="8,4" stroke-linecap="round"/>
+          <!-- X axis -->
+          <line x1="0" y1="98" x2="700" y2="98" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+          <!-- Labels -->
+          <text x="8" y="95" font-size="9" fill="rgba(255,255,255,0.3)" font-family="monospace">Day 1</text>
+          <text x="330" y="95" font-size="9" fill="rgba(255,255,255,0.3)" font-family="monospace">Day 4</text>
+          <text x="660" y="95" font-size="9" fill="rgba(255,255,255,0.3)" font-family="monospace">Day 7</text>
+        </svg>
+        <div style="display:flex;gap:20px;margin-top:8px;">
+          <div style="display:flex;align-items:center;gap:6px;font-size:0.7rem;color:rgba(248,249,252,0.5);">
+            <div style="width:20px;height:2px;background:#00C2A8;border-radius:2px;"></div> Actual AQI
+          </div>
+          <div style="display:flex;align-items:center;gap:6px;font-size:0.7rem;color:rgba(248,249,252,0.5);">
+            <div style="width:20px;height:2px;background:#F5A623;border-radius:2px;border-top:2px dashed #F5A623;"></div> Predicted AQI
+          </div>
+        </div>
+      </div>
+
+      <!-- Monitoring stations -->
+      <div class="chart-area">
+        <div class="chart-title">10+ Monitoring Stations — AQI Status Snapshot</div>
+        <div class="station-grid">
+          <div class="station-dot"><div class="dot-ind" style="background:#4CAF50;"></div>Chennai</div>
+          <div class="station-dot"><div class="dot-ind" style="background:#FFC107;"></div>Coimbatore</div>
+          <div class="station-dot"><div class="dot-ind" style="background:#4CAF50;"></div>Madurai</div>
+          <div class="station-dot"><div class="dot-ind" style="background:#F44336;"></div>Manali</div>
+          <div class="station-dot"><div class="dot-ind" style="background:#FFC107;"></div>Trichy</div>
+          <div class="station-dot"><div class="dot-ind" style="background:#4CAF50;"></div>Salem</div>
+          <div class="station-dot"><div class="dot-ind" style="background:#4CAF50;"></div>Vellore</div>
+          <div class="station-dot"><div class="dot-ind" style="background:#FFC107;"></div>Thoothukudi</div>
+          <div class="station-dot"><div class="dot-ind" style="background:#4CAF50;"></div>Erode</div>
+          <div class="station-dot"><div class="dot-ind" style="background:#4CAF50;"></div>Tirunelveli</div>
+        </div>
+        <div style="display:flex;gap:16px;margin-top:10px;">
+          <div style="display:flex;align-items:center;gap:5px;font-size:0.65rem;color:rgba(248,249,252,0.4);"><div style="width:8px;height:8px;border-radius:50%;background:#4CAF50;"></div>Good</div>
+          <div style="display:flex;align-items:center;gap:5px;font-size:0.65rem;color:rgba(248,249,252,0.4);"><div style="width:8px;height:8px;border-radius:50%;background:#FFC107;"></div>Moderate</div>
+          <div style="display:flex;align-items:center;gap:5px;font-size:0.65rem;color:rgba(248,249,252,0.4);"><div style="width:8px;height:8px;border-radius:50%;background:#F44336;"></div>Unhealthy</div>
+        </div>
+      </div>
+
+      <div class="m-section-label">Tech Stack</div>
+      <div class="m-techs">
+        <span class="m-tech">Python</span><span class="m-tech">ARIMA</span>
+        <span class="m-tech">Random Forest</span><span class="m-tech">Scikit-learn</span>
+        <span class="m-tech">Pandas</span><span class="m-tech">Power BI</span>
+        <span class="m-tech">Matplotlib</span>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="m-panel" id="tab1">
+      <div class="m-proj-title">Enterprise Data Analytics Dashboard</div>
+      <div class="m-proj-sub">Bleswa Solutions · Apr 2026</div>
+      <div class="m-proj-desc">
+        Multi-source analytics platform consolidating business data from 5 different sources into a unified Power BI dashboard — enabling the client's operations team to make real-time, trend-based decisions.
+      </div>
+
+      <div class="metric-row">
+        <div class="metric-card">
+          <div class="metric-val">5</div>
+          <div class="metric-label">Data Sources</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-val">3d→2h</div>
+          <div class="metric-label">Report Time Cut</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-val">~25%</div>
+          <div class="metric-label">Manual Work Saved</div>
+        </div>
+      </div>
+
+      <!-- MoM Revenue bar chart -->
+      <div class="chart-area">
+        <div class="chart-title">Sample KPI — Month-on-Month Revenue Trend</div>
+        <div class="bar-chart" style="height:100px;">
+          <div class="bar-wrap">
+            <div class="bar-val">₹4.2L</div>
+            <div class="bar" style="height:60%;background:rgba(46,125,209,0.5);border:1px solid rgba(46,125,209,0.3);"></div>
+            <div class="bar-label">Nov</div>
+          </div>
+          <div class="bar-wrap">
+            <div class="bar-val">₹5.1L</div>
+            <div class="bar" style="height:73%;background:rgba(46,125,209,0.5);border:1px solid rgba(46,125,209,0.3);"></div>
+            <div class="bar-label">Dec</div>
+          </div>
+          <div class="bar-wrap">
+            <div class="bar-val">₹4.8L</div>
+            <div class="bar" style="height:69%;background:rgba(46,125,209,0.5);border:1px solid rgba(46,125,209,0.3);"></div>
+            <div class="bar-label">Jan</div>
+          </div>
+          <div class="bar-wrap">
+            <div class="bar-val">₹6.2L</div>
+            <div class="bar" style="height:89%;background:rgba(46,125,209,0.5);border:1px solid rgba(46,125,209,0.3);"></div>
+            <div class="bar-label">Feb</div>
+          </div>
+          <div class="bar-wrap">
+            <div class="bar-val">₹5.9L</div>
+            <div class="bar" style="height:85%;background:rgba(46,125,209,0.5);border:1px solid rgba(46,125,209,0.3);"></div>
+            <div class="bar-label">Mar</div>
+          </div>
+          <div class="bar-wrap">
+            <div class="bar-val" style="color:var(--accent);">₹7.0L</div>
+            <div class="bar" style="height:100%;background:var(--accent);border:1px solid var(--accent);"></div>
+            <div class="bar-label" style="color:var(--accent);">Apr ↑</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Top SKUs -->
+      <div class="chart-area">
+        <div class="chart-title">Top 5 SKUs by Revenue Contribution</div>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <div>
+            <div style="display:flex;justify-content:space-between;font-size:0.72rem;color:rgba(248,249,252,0.5);margin-bottom:4px;"><span>SKU-A104</span><span>34%</span></div>
+            <div style="background:rgba(255,255,255,0.07);border-radius:4px;height:7px;"><div style="width:34%;height:100%;background:var(--accent);border-radius:4px;"></div></div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;font-size:0.72rem;color:rgba(248,249,252,0.5);margin-bottom:4px;"><span>SKU-B219</span><span>22%</span></div>
+            <div style="background:rgba(255,255,255,0.07);border-radius:4px;height:7px;"><div style="width:22%;height:100%;background:#2E7DD1;border-radius:4px;"></div></div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;font-size:0.72rem;color:rgba(248,249,252,0.5);margin-bottom:4px;"><span>SKU-C087</span><span>18%</span></div>
+            <div style="background:rgba(255,255,255,0.07);border-radius:4px;height:7px;"><div style="width:18%;height:100%;background:#F5A623;border-radius:4px;"></div></div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;font-size:0.72rem;color:rgba(248,249,252,0.5);margin-bottom:4px;"><span>SKU-D341</span><span>14%</span></div>
+            <div style="background:rgba(255,255,255,0.07);border-radius:4px;height:7px;"><div style="width:14%;height:100%;background:#9B6DFF;border-radius:4px;"></div></div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;font-size:0.72rem;color:rgba(248,249,252,0.5);margin-bottom:4px;"><span>Others</span><span>12%</span></div>
+            <div style="background:rgba(255,255,255,0.07);border-radius:4px;height:7px;"><div style="width:12%;height:100%;background:rgba(255,255,255,0.3);border-radius:4px;"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data sources -->
+      <div class="chart-area">
+        <div class="chart-title">Pipeline Architecture — 5 Source Consolidation</div>
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:7px;padding:7px 12px;font-size:0.7rem;color:rgba(248,249,252,0.6);">📋 Sales DB</div>
+            <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:7px;padding:7px 12px;font-size:0.7rem;color:rgba(248,249,252,0.6);">📦 Inventory</div>
+            <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:7px;padding:7px 12px;font-size:0.7rem;color:rgba(248,249,252,0.6);">👥 CRM</div>
+            <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:7px;padding:7px 12px;font-size:0.7rem;color:rgba(248,249,252,0.6);">💰 Finance</div>
+            <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:7px;padding:7px 12px;font-size:0.7rem;color:rgba(248,249,252,0.6);">📊 Marketing</div>
+          </div>
+          <div style="font-size:1.4rem;color:rgba(0,194,168,0.5);">→</div>
+          <div style="background:rgba(0,194,168,0.08);border:1px solid rgba(0,194,168,0.2);border-radius:10px;padding:12px 16px;text-align:center;">
+            <div style="font-size:0.65rem;color:rgba(248,249,252,0.4);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:4px;">Python ETL</div>
+            <div style="font-size:0.75rem;color:var(--accent);">Auto Refresh</div>
+            <div style="font-size:0.65rem;color:rgba(248,249,252,0.3);margin-top:2px;">Weekly</div>
+          </div>
+          <div style="font-size:1.4rem;color:rgba(0,194,168,0.5);">→</div>
+          <div style="background:rgba(46,125,209,0.1);border:1px solid rgba(46,125,209,0.25);border-radius:10px;padding:14px 20px;text-align:center;">
+            <div style="font-size:0.65rem;color:rgba(248,249,252,0.4);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:4px;">Output</div>
+            <div style="font-size:0.8rem;color:#2E7DD1;font-weight:600;">Power BI</div>
+            <div style="font-size:0.65rem;color:rgba(248,249,252,0.3);margin-top:2px;">Live Dashboard</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="m-section-label">Tech Stack</div>
+      <div class="m-techs">
+        <span class="m-tech">Power BI</span><span class="m-tech">SQL</span>
+        <span class="m-tech">DAX</span><span class="m-tech">Python</span>
+        <span class="m-tech">MySQL</span><span class="m-tech">ETL Pipelines</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function openProjectModal(){
+  document.getElementById('projectModal').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeProjectModal(){
+  document.getElementById('projectModal').classList.remove('open');
+  document.body.style.overflow='';
+}
+function switchTab(idx){
+  document.querySelectorAll('.m-tab').forEach((t,i)=>t.classList.toggle('active',i===idx));
+  document.querySelectorAll('.m-panel').forEach((p,i)=>p.classList.toggle('active',i===idx));
+}
+document.getElementById('projectModal').addEventListener('click',function(e){
+  if(e.target===this) closeProjectModal();
+});
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape') closeProjectModal();
+});
+</script>
+
+
+<script>
+function setProfilePhoto(input) {
+  if (input.files && input.files[0]) {
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      const img = document.getElementById('profile-img');
+      const initials = document.getElementById('profile-initials');
+      img.src = e.target.result;
+      img.style.display = 'block';
+      initials.style.display = 'none';
+    };
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+</script>
+</body>
+</html>
